@@ -30,6 +30,8 @@ const viewPlane = new THREE.Mesh(geo, mat);
 viewPlane.setRotationFromAxisAngle( new THREE.Vector3(0,1,0), Math.PI );
 app.scene.add(viewPlane);
 
+var clm = require('./lib/clmtrackr');
+
 app.on('tick', function(dt) {
   //.. handle pre-render updates
   TWEEN.update();
