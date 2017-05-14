@@ -21,7 +21,8 @@ const tex = new THREE.VideoTexture(camEl);
 // set up texture for better performance
 tex.minFilter = THREE.LinearFilter;
 tex.magFilter = THREE.LinearFilter;
-tex.format = THREE.RGBFormat;
+// tex.format = THREE.RGBFormat; // colored
+tex.format = THREE.LuminanceFormat; // B&W
 const geo = new THREE.PlaneGeometry(window.innerWidth / window.innerHeight, 1 );
 const mat = new THREE.MeshBasicMaterial({ color: 0xffffff, map: tex });
 mat.side = THREE.BackSide;
