@@ -2,4 +2,3 @@ node_modules
 .DS_Store
 thumbs.db
 desktop.ini
-bundle.js
